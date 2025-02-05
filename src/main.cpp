@@ -1,9 +1,10 @@
-#include "minesweeper.h"
+#include "mainwindow.h"
+#include <QApplication>
 
-int main(){
-
-    Minesweeper game(30,15,90)
-    game.displayBoard();
-    
-    return 0;
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
 }
